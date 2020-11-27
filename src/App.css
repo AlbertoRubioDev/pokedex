@@ -1,3 +1,9 @@
+@import '~antd/dist/antd.css';
+
+html{
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,193 @@
   to {
     transform: rotate(360deg);
   }
+}
+.show-info {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+.show-info .progress {
+  margin-right: 5px;
+  width: 100%;
+}
+.grass{
+  background-color: #48d0b0;
+}
+.fire {
+  background-color: #fb6c6c;
+}
+.water {
+  background-color: #76bdfe;
+}
+.pkmn-background {
+  background-image: url("./ball.png");
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 1rem;
+  z-index: 2;
+  margin-top: -1rem;
+}
+.normal {
+  background-color:#e4e0d4;
+  }
+  .fight {
+  background-color:#f4b87d;
+  }
+  .flying {
+  background-color:#b1c8e6;
+  }
+  .ground {
+     background-color: #e7d2b0;
+  }
+  .rock {
+     background-color: #c7aa95;
+  }
+  .steel  {
+  background-color:#e1e1e1;
+  }
+  .poison  {
+  background-color:#b38fc2;
+  }
+  .ghost {
+  background-color:#b6b0d3;
+  }
+  .bug {
+  background-color:#b8bf7b;
+  }
+  .electric {
+  background-color:#ffd86f;
+  }
+  .fairy {
+     background-color: #f3cad6;
+  }
+  .psychic {
+     background-color: #ecaebe;
+  }
+  .ice {
+     background-color: #d9f7f7;
+  }
+  .dragon{
+     background-color: #847bdd;
+  }
+  .dark {
+     background-color: #4e4e4e;
+  }
+  .pokemonTitle {
+    color: white;
+font-family: Roboto;
+text-align: left;
+text-transform: capitalize;
+margin: 0 2rem;
+font-weight: bold;
+font-size: 3rem;
+  }
+    .pokemonSubtitle {
+    color: white;
+font-family: Roboto;
+text-align: right;
+text-transform: capitalize;
+font-weight: bold;
+font-size: 1.7rem;
+margin: 0 2rem;
+margin-top: -3rem;
+  }
+
+  .am-tabs-default-bar{
+    padding-top: 2.5rem;
+     border-radius: 2.5rem 2.5rem 0 0;
+  }
+
+  .am-tabs-top{
+    margin-top: -3.5rem;
+  }
+
+.pkm-txt {
+  width: 60%;
+  text-align: left;
+  border-radius: 5rem;
+  margin: 1rem 0rem 0rem 1rem;
+  font-size: 3.5vw;
+  color: black;
+  font-weight: bold;
+  font-family: Roboto;
+  text-transform: capitalize;
+}
+
+.nav-img{
+  position: absolute;
+  top: -135px;
+  right: -126px;
+  width: 300px;
+}
+
+/* ANIMATIONS */
+.slide-enter {
+  transform: translateX(100%);
+}
+.slide-enter-active {
+  transform: translateX(0%);
+  transition: transform 3000ms ease-in-out;
+}
+.slide-exit {
+  transform: translateX(0%);
+}
+.slide-exit-active {
+  transform: translateX(-100%);
+  transition: transform 3000ms ease-in-out;
+}
+
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.page-exit {
+  transform: translateX(0%);
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  background-image: url("./bball.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}.full {
+  transition: opacity 400ms ease 0ms;
+}.thumb {
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: visibility 0ms ease 400ms;
+}
+.white-text {
+  color: white !important;
+}
+.black-text {
+  color: black !important;
+}
+.am-tabs-pane-wrap{
+  background-color: #f5f5f9;
 }
